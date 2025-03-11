@@ -1,0 +1,14 @@
+### testar a raiz da alicação 
+GET http://localhost:5220
+
+### teste de cadastro de produtos (o endpoint deve ser o mesmo da requisição do arquivo Program.cs)
+POST http://localhost:5220/api/produto/cadastrar   
+Content-Type: application/json
+
+{  
+    "Nome" : "Tablet",
+    "Quantidade" : 150
+}
+
+### teste de listagem de produtos
+GET http://localhost:5220/api/produto/listar
