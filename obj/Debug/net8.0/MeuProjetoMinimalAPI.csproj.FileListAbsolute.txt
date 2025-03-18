@@ -126,3 +126,7 @@ C:\web avançado\MeuProjetoMinimalAPI\bin\Debug\net8.0\runtimes\win-x64\native\e
 C:\web avançado\MeuProjetoMinimalAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\web avançado\MeuProjetoMinimalAPI\obj\Debug\net8.0\MeuProjetoMinimalAPI.csproj.AssemblyReference.cache
 C:\web avançado\MeuProjetoMinimalAPI\obj\Debug\net8.0\MeuProje.D30E1AA0.Up2Date
+C:\web avançado\MeuProjetoMinimalAPI\obj\Debug\net8.0\MeuProjetoMinimalAPI.sourcelink.json
+C:\web avançado\MeuProjetoMinimalAPI\bin\Debug\net8.0\front\package-lock.json
+C:\web avançado\MeuProjetoMinimalAPI\bin\Debug\net8.0\front\package.json
+C:\web avançado\MeuProjetoMinimalAPI\bin\Debug\net8.0\front\tsconfig.json

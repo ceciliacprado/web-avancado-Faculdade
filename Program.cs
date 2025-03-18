@@ -3,6 +3,14 @@ using MeuProjetoMinimalAPI.Models; //para usar a classe Produto (de models)
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDataContext>(); //deixa o banco disponivel em qualquer lugar da aplicação para ser utilizado
+
+builder.Services.AddCors(options => { //configuração de cors - permitir requisições de outras origens (sem ser localhost:3000)
+    options.AddPolicy("Acesso total", configs => configs.
+    AllowAnyOrigin()  //permite requisições de qualquer origem
+    .AllowAnyMethod() //permite requisições de qualquer método
+    .AllowAnyHeader()); //permite requisições de qualquer cabeçalho
+});
+
 var app = builder.Build();
 
 //definir os endpoints (simples e complexos)
@@ -19,4 +27,5 @@ app.MapGet("/api/produto/listar", ([FromServices] AppDataContext banco) => { //d
    return Results.Ok(banco.Produtos.ToList()); //retorna a lista de produtos
 });
 
+app.UseCors("Acesso total"); //usa a configuração de cors antes de rodar a aplicação
 app.Run();
